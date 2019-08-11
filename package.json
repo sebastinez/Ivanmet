@@ -1,0 +1,17 @@
+{
+  "name": "htdocs",
+  "version": "1.0.0",
+  "description": "_A Pen created at CodePen.io. Original URL: [https://codepen.io/sebastinez/pen/4cfbaf70f22e78928f468cd2246cd35d](https://codepen.io/sebastinez/pen/4cfbaf70f22e78928f468cd2246cd35d).",
+  "main": "script.js",
+  "scripts": {
+    "build": "babel input -d lib"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.5.0",
+    "@babel/core": "^7.5.0",
+    "@babel/preset-env": "^7.5.0"
+  }
+}

@@ -1,0 +1,15 @@
+html {
+  font-family: "Roboto Mono", monospace;
+  font-size: 30px;
+}
+#relojes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.reloj-ind {
+  margin: 30px;
+  text-align: center;
+
+}

@@ -21,16 +21,16 @@ if (isset($_GET["lang"])) {
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel='stylesheet' href='./src/logo.css'>
-  <link rel="stylesheet" href="./style.css">
-  <link rel="stylesheet" href="./pages/cotizador.css">
-  <link rel="stylesheet" href="./pages/horarios.css">
-  <link rel="stylesheet" href="./pages/dimensiones.css">
+  <link rel='stylesheet' href='./css/logo.css'>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/cotizador.css">
+  <link rel="stylesheet" href="./css/horarios.css">
+  <link rel="stylesheet" href="./css/dimensiones.css">
   <link rel="stylesheet" type="text/css" href="./slick/slick.css" />
   <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css" />
-  <link href="./semantic.css" rel="stylesheet">
-  <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
-  <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+  <link href="./css/semantic.css" rel="stylesheet">
+  <link rel="icon" type="image/png" href=".src/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href=".src/favicon-16x16.png" sizes="16x16" />
   <script src="https://kit.fontawesome.com/854c6affe2.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans&display=swap" rel="stylesheet">
   <title>IVANMET</title>
@@ -81,7 +81,6 @@ if (isset($_GET["lang"])) {
       <div><img src="./src/DUNS.png" id="DUNSLogo" alt=""></div>
     </div>
     <?php include("./navbar.php");
-    //include("./herramientas_float.php");
     ?>
     <div class="body">
       <div id="herramientas_div">

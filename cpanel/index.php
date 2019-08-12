@@ -38,6 +38,18 @@ foreach ($json_data as $key => $value) {
 }
  ?>
 
+ <?php
+
+ $dir = scandir("../logos-clientes");
+
+ foreach ($dir as $item) {
+   if($item !== "..") {
+ echo "<div><img src='../logos-clientes/".$item."' width='100px'><p>".trim(explode(".",$item)[0])."</p></div>";
+ }
+ }
+
+  ?>
+
 
  </body>
  </html>

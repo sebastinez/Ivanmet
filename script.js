@@ -73,8 +73,8 @@ function mostrarServicios() {
       "Freight Forwarder",
       "Customs Broker",
       "Project Cargo",
-      "External Office of International Purchases",
-      "Transportation Insurance"
+      "International Purchases Office",
+      "Cargo Insurance"
     ];
   } else {
     text = [

@@ -16,7 +16,7 @@
   </div>
   <div>
     <a class="menu-item" onclick="mostrarProyectos(500)">
-    <?php if ($lang === "en") { echo "Fulfilled Projects";} else { echo "Proyectos Realizados";} ?>
+    <?php if ($lang === "en") { echo "Projects Done";} else { echo "Proyectos Realizados";} ?>
     </a>
   </div>
   <div>

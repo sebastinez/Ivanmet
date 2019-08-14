@@ -39,7 +39,7 @@ function showTextOnClick() {
   var text_es =
     "<ul id='herramientas_mobile'><a href='?page=noticia#text'><li class='herrItem'>Noticias</li></a><a href='?page=cotizador#text'><li class='herrItem'>Conversor de monedas</li></a><a href='?page=dimensiones#text'><li class='herrItem'>Conversor de unidades</li></a><a href='?page=horarios#text'><li class='herrItem'>Horarios Mundiales</li></a><a href='/pages/TablaIncoterms.pdf' target='_blank'><li class='herrItem'>INCOTERMS</li></a><a href='/pages/Container.pdf' target='_blank'><li class='herrItem'>Containers Marítimos</li></a></ul>";
   var text_en =
-    "<ul id='herramientas_mobile'><a href='?page=noticia#text'><li class='herrItem'>News</li></a><a href='?page=cotizador#text'><li class='herrItem'>Currency Converter</li></a><a href='?page=dimensiones#text'><li class='herrItem'>Unit Converter</li></a><a href='?page=horarios#text'><li class='herrItem'>World Clock</li></a><a href='/pages/TablaIncoterms.pdf' target='_blank'><li class='herrItem'>INCOTERMS</li></a><a href='/pages/Container.pdf' target='_blank'><li class='herrItem'>Shipping Container</li></a></ul>";
+    "<ul id='herramientas_mobile'><a href='?page=noticia#text'><li class='herrItem'>News</li></a><a href='?page=cotizador#text'><li class='herrItem'>Currency Converter</li></a><a href='?page=dimensiones#text'><li class='herrItem'>Unit Converter</li></a><a href='?page=horarios#text'><li class='herrItem'>World Time</li></a><a href='/pages/TablaIncoterms.pdf' target='_blank'><li class='herrItem'>INCOTERMS</li></a><a href='/pages/Container.pdf' target='_blank'><li class='herrItem'>Shipping Container</li></a></ul>";
   var herramientas = document.getElementById("herramientas_div");
   if (lang === "en") {
     herramientas.innerHTML = text_en;

@@ -63,7 +63,7 @@
       <img src="./src/home.svg" class="about-icons">
       <div class="description">
         <?php if ($lang === "en") {
-          echo "External Office of International Purchases";
+          echo "International Purchases Office";
         } else {
           echo "Oficina Externa de Compras Internacionales";
         } ?>
@@ -76,7 +76,7 @@
       <img src="./src/handshake.svg" class="about-icons">
       <div class="description">
         <?php if ($lang === "en") {
-          echo "Transportation Insurance";
+          echo "Cargo Insurance";
         } else {
           echo "Seguros de Transporte";
         } ?>

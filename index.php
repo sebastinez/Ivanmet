@@ -102,7 +102,9 @@ if (isset($_GET["lang"])) {
           $fecha = preg_match_all("(\d*\/\d*\/\d*)", $cadena, $fechaArr);
           $compra = preg_match_all("(\d*,\d*)", $cadena, $compraArr);
           if ($lang === "en") {
-            print("Customs Payment Dollar " . $fechaArr[0][1] . "<span id='brCambio'><br></span> Buy: " . $compraArr[0][2] . " Sell: " . $compraArr[0][3]);
+            $fechaUS = explode("/",$fechaArr[0][1]);
+            $fechaUSNew = $fechaUS[1]."/".$fechaUS[0]."/".$fechaUS[2];
+            print("Customs Payment US Dollar " . $fechaUSNew . "<span id='brCambio'><br></span> Buy: " . $compraArr[0][2] . " Sell: " . $compraArr[0][3]);
           } else {
             print("Pago Aduana dólar " . $fechaArr[0][1] . "<span id='brCambio'><br></span> Compra: " . $compraArr[0][2] . " Venta: " . $compraArr[0][3]);
           }

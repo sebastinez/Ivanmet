@@ -5,7 +5,7 @@
 
   <div class="body-container-header" id="text">
     <?php if ($lang === "en") {
-      echo "Images of fulfilled projects";
+      echo "Images of projects done";
     } else {
       echo  "Im&aacute;genes de proyectos realizados";
     } ?>

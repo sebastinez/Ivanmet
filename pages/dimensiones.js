@@ -52,7 +52,7 @@ factor[0] = new Array(
   0.9144
 );
 
-property[1] = 'Masa';
+property[1] = 'Peso';
 unit[1] = new Array(
   'Kilogramo',
   'Gramo',

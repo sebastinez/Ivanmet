@@ -24,13 +24,7 @@
     <?php if ($lang === "en") { echo "Contact";} else { echo "Contacto";} ?>
     </a>
   </div>
-  <!-- <div>
-    <script>
-      document.write(
-        lang === "en"
-          ? "<a class='menu-item' href='?page=about&lang=es'>Español</a>"
-          : "<a class='menu-item' href='?page=about&lang=en'>English</a>"
-      );
-    </script>
-  </div> -->
+   <div>
+     <?php if ($lang === "en") { echo "<a class='menu-item' href='?page=about&lang=es'><img src='img/flags/ar.svg' height='20px' style='vertical-align:bottom;'></a>"; } else { echo "<a class='menu-item' href='?page=about&lang=en'><img src='img/flags/us.svg' height='20px' style='vertical-align:bottom;'></a>";} ?>
+  </div>
 </div>

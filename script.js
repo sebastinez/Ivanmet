@@ -50,11 +50,10 @@ function showTextOnClick() {
 }
 
 setTimeout(function() {
-  //$(".boton").fadeIn(500);
-  $("#landingLogo").fadeOut(500);
-  $("#page").fadeIn(1000);
+  $(".boton").fadeIn(500);
   $("#skip").hide();
 }, 6000);
+
 setTimeout(function() {
   $("#skip").fadeIn(500);
 }, 2000);

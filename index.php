@@ -54,8 +54,8 @@ if (isset($_GET["lang"])) {
         <div><img id="flecha" src='./src/Flecha.png' alt=''></div>
       </div>
       <div id="flexBoton">
-        <a href="?lang=es" class="boton"><img src='img/flags/ar.svg' height='40px'></a>
-        <a href="?lang=en" class="boton"><img src='img/flags/us.svg' height='40px'></a>
+        <a href="?lang=es" class="boton"><img src='img/flags/es.svg' height='40px'></a>
+        <a href="?lang=en" class="boton"><img src='img/flags/gb.svg' height='40px'></a>
         <div id="skip" onClick="entrar()">Saltar introduccion</div>
       </div>
     </div>

@@ -25,6 +25,6 @@
     </a>
   </div>
    <div>
-     <?php if ($lang === "en") { echo "<a class='menu-item' href='?page=about&lang=es'><img src='img/flags/es.svg' height='20px' style='vertical-align:bottom; padding-right:10px;'>ESP</a>"; } else { echo "<a class='menu-item' href='?page=about&lang=en'><img src='img/flags/gb.svg' height='20px' style='vertical-align:bottom; padding-right:10px;'>ENG</a>";} ?>
+     <?php if ($lang === "en") { echo "<a class='menu-item' href='?page=about&lang=es'><img src='img/flags/es.svg' height='20px'  style='vertical-align:bottom; padding-right:10px;'><p class='mobile'>ESP</p><p class='desktop'>Español</p></a>"; } else { echo "<a class='menu-item' href='?page=about&lang=en'><img src='img/flags/gb.svg' height='20px' style='vertical-align:bottom; padding-right:10px;'><p class='mobile'>ENG</p><p class='desktop'>English</p></a>";} ?>
   </div>
 </div>

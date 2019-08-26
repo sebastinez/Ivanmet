@@ -12,6 +12,24 @@ body {
   opacity: 0;
 }
 
+div#flexBoton a p {
+  margin-top: 5px;
+  text-align: center;
+}
+
+div#flexBoton a p.mobile {
+  text-align: center;
+  display:none;
+}
+
+.menu-item p {
+  display: inline-block;
+}
+
+.menu-item p.mobile {
+  display:none;
+}
+
 #flexBoton {
   justify-content: center;
   display: flex;
@@ -586,6 +604,23 @@ svg {
     width: 100%;
     height: 100%;
     margin: auto;
+  }
+
+  div#flexBoton a p.mobile {
+    display: block;
+  }
+
+  div#flexBoton a p.desktop {
+    display:none;
+  }
+
+  .menu-item p.mobile {
+    display:inline-block;
+    margin: 0;
+  }
+
+  .menu-item p.desktop {
+    display:none;
   }
 
   #herramientas_mobile {

@@ -28,7 +28,7 @@
 $dir = scandir("../logos-clientes");
 foreach ($dir as $item) {
     if(strpos($item,"png")) {?>
-<div class="col-lg-3 col-md-4 col-xs-6"><img src='../logos-clientes/<?php echo $item; ?>' width="100%"></div>
+<div class="col-lg-3 col-md-6 col-xs-12"><img src='../logos-clientes/<?php echo $item; ?>' width="100%"></div>
 <?php
   }
 }

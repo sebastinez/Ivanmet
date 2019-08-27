@@ -12,7 +12,7 @@
   <h1>Agregar imagen de background</h1>
   <div class="form-group">
     <label for="exampleInputEmail1">Titulo de archivo</label>
-    <input type="text" class="form-control" id="titulo" placeholder="Ingresar titulo" autocomplete="off">
+    <input type="text" class="form-control" id="titulo" name="titulo" placeholder="Ingresar titulo" autocomplete="off">
   </div>
   <div class="form-group">
     <input type="file" class="form-control-file" id="file" name="image">
@@ -30,8 +30,8 @@ foreach ($json_data as $key => $value) {
 ?>
 <div class='col-xs-12 col-md-6 col-lg-4'>
 
-  <img src='../expertise_imagenes/<?php echo $key; ?>.jpg' alt="<?php echo $value[0]; ?>" class="p-4" style="width:100%;">
-  <p class="px-4"><?php echo $value[0]; ?></p>
+  <img src='../expertise_imagenes/<?php echo $key; ?>.jpg' alt="<?php echo $value; ?>" class="p-4" style="width:100%;">
+  <p class="px-4"><?php echo $value; ?></p>
   <button type="button" class="delete" data-toggle="modal" data-target="#borrar_<?php echo $key; ?>">
 Borrar
 </button>
@@ -53,16 +53,19 @@ Editar
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
+      <form action="./api_images/edit_images.php" method="POST">
+
       <div class="modal-body">
-    <form>
       Por favor modificar titulo de imagen
-      <input type="text" value="<?php echo $value[0]; ?>" style="width:100%; margin-top:15px;">
-</form>
+      <input type="text" name="titulo" value="<?php echo $value; ?>" style="width:100%; margin-top:15px;">
     </div>
       <div class="modal-footer">
+        <input type="hidden" value="<?php echo $key; ?>" name="hash">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-        <button type="submit" class="btn btn-primary">Guardar cambios</button>
+        <button type="submit" name="edit" value="edit" class="btn btn-primary">Guardar cambios</button>
       </div>
+      </form>
+
     </div>
   </div>
 </div>
@@ -79,7 +82,7 @@ Editar
       </div>
       <div class="modal-body">
         Por favor confirmar la eliminación de la siguiente imagen. 
-        <h5 style="margin-top:15px;"><?php echo $value[0]; ?></h5>
+        <h5 style="margin-top:15px;"><?php echo $value; ?></h5>
         <img src="../expertise_imagenes/<?php echo $key; ?>.jpg" width="100%" style="margin-top:15px;">
       </div>
       <div class="modal-footer">

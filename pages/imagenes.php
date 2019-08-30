@@ -16,37 +16,17 @@
   <div class="body-container-text hide" id="body">
     <!-- Slideshow container -->
 
-    <?php
-    $url = "./expertise_imagenes";
-    if ($gestor = opendir($url)) {
-      $fileArray = array();
-      while (false !== ($entrada = readdir($gestor))) {
-        if (strpos($entrada, "jpg")) {
-          array_push($fileArray, $url . "/" . $entrada);
-        }
-      }
-    } ?>
-
     <div class="autoplay">
-      <?php foreach ($fileArray as $valor) { ?>
+      <?php
+      $json = file_get_contents("./db/images.json");
+      $json_data = json_decode($json, true);
+      foreach ($json_data as $key => $value) :
+        ?>
         <div>
-          <h2 style="text-align:center;">
-            <?php
-            $title = substr(explode("/", $valor)[2], 0, -4);
-            if (strstr($title, "Capsula")) {
-              echo "C&aacute;psula de supervivencia SIPETROL";
-            } elseif (strstr($title, "Grua")) {
-              echo "Gr&uacute;as TEREX-INGENIERIA SIMA";
-            } elseif (strstr($title, "nitrogeno")) {
-              echo "Unidad de nitr&oacute;geno WEATHERFORD";
-            } else {
-              echo $title;
-            }
-
-            ?></h2>
-          <img src="<?php echo htmlspecialchars_decode($valor, ENT_NOQUOTES); ?>" class="imageSlider">
+          <h2 style="text-align:center;"><?= $value ?></h2>
+          <img src="./expertise_imagenes/<?= $key ?>.jpg" class="imageSlider">
         </div>
-      <?php } ?>
+      <?php endforeach; ?>
     </div>
 
   </div>

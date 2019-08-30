@@ -1,15 +1,23 @@
+<?php
+session_start();
+
+if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
+  header("Location: ./api/login.php");
+  exit;
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>SB Admin - Dashboard</title>
+  <title>Panel de Control IVANMET</title>
 
   <!-- Custom fonts for this template-->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -37,7 +45,7 @@
         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
           <a class="dropdown-item" href="#">Preferencias</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Salir</a>
+          <a class="dropdown-item" href="./api/logout.php">Salir</a>
         </div>
       </li>
     </ul>
@@ -48,19 +56,25 @@
 
     <!-- Sidebar -->
     <ul class="sidebar navbar-nav">
-      <li class="nav-item <?php if($_GET["page"]=== "images") { echo "active"; } ?>">
+      <li class="nav-item <?php if ($_GET["page"] === "images") {
+                            echo "active";
+                          } ?>">
         <a class="nav-link" href="index.php?page=images">
           <i class="fas fa-fw fa-image"></i>
           <span>Imagenes</span>
         </a>
       </li>
-      <li class="nav-item <?php if($_GET["page"]=== "background") { echo "active"; } ?>">
+      <li class="nav-item <?php if ($_GET["page"] === "background") {
+                            echo "active";
+                          } ?>">
         <a class="nav-link" href="index.php?page=background">
           <i class="fas fa-fw fa-archive"></i>
           <span>Background</span>
         </a>
       </li>
-      <li class="nav-item <?php if($_GET["page"]=== "clientes") { echo "active"; } ?>">
+      <li class="nav-item <?php if ($_GET["page"] === "clientes") {
+                            echo "active";
+                          } ?>">
         <a class="nav-link" href="index.php?page=clientes">
           <i class="fas fa-fw fa-user-friends"></i>
           <span>Clientes</span></a>
@@ -71,19 +85,18 @@
 
       <div class="container-fluid">
 
-      <?php if (isset($_GET["page"])) {
-        $page = $_GET["page"];
-        include("./pages/$page.php");
-
-      } else {?>
-      <h1>Bienvenido al panel de control de IVANMET</h1>
-      <p>Seleccione una de las herramientas a su izquierda.</p>
-    <?php }
-      ?>
+        <?php if (isset($_GET["page"])) {
+          $page = $_GET["page"];
+          include("./pages/$page.php");
+        } else { ?>
+          <h1>Bienvenido al panel de control de IVANMET</h1>
+          <p>Seleccione una de las herramientas a su izquierda.</p>
+        <?php }
+        ?>
       </div>
       <!-- /.container-fluid -->
 
-    
+
 
     </div>
     <!-- /.content-wrapper -->

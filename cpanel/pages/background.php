@@ -15,7 +15,6 @@
     <div class="form-group">
       <textarea rows="5" style="width:100%;" name="english" placeholder="Texto en ingles"></textarea>
     </div>
-
     <button type="submit" name="add" class="btn btn-primary">Agregar background</button>
   </form>
 </div>
@@ -38,7 +37,6 @@
           <td><?= $value["en"] ?></td>
           <td><?= $value["es"] ?></td>
           <td style="white-space:nowrap; "><button type="button" class="btn btn-danger mr-3" data-toggle="modal" data-target="#borrar_<?= $key ?>">Borrar</button><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#editar_<?= $key ?>">Editar</button>
-
           </td>
         </tr>
 
@@ -66,7 +64,6 @@
                   <button type="submit" name="edit" class="btn btn-primary">Guardar cambios</button>
                 </div>
               </form>
-
             </div>
           </div>
         </div>

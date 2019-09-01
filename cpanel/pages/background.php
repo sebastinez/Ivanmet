@@ -6,6 +6,19 @@
   <li class="breadcrumb-item active">Background</li>
 </ol>
 
+<div class="jumbotron" style="padding-top:30px; padding-bottom:30px;">
+  <form action="./api/background.php" method="POST">
+    <h1>Agregar background</h1>
+    <div class="form-group">
+      <textarea rows="5" style="width:100%;" name="spanish" placeholder="Texto en español"></textarea>
+    </div>
+    <div class="form-group">
+      <textarea rows="5" style="width:100%;" name="english" placeholder="Texto en ingles"></textarea>
+    </div>
+
+    <button type="submit" name="add" class="btn btn-primary">Agregar background</button>
+  </form>
+</div>
 
 <table class="table table-hover">
   <thead>

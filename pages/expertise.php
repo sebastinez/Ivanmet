@@ -1,6 +1,6 @@
 <?php require(dirname(__DIR__) . "/localization/expertise.php"); ?>
 
-<div class="secctionfotos zindex" id="proyectobg"></div>
+<div class="secctionfotos section-container-fotos zindex" id="proyectobg"></div>
 
 <div class="body-container">
   <div class="secctionfotos" id="proyectoprimary"></div>

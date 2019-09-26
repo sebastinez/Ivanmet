@@ -3,7 +3,7 @@
 <div class="secctionfotos zindex" id="clientesbg"></div>
 
 <div class="body-container">
-  <div class="secctionfotos" id="clientesprimary"></div>
+  <div class="secctionfotos section-container-fotos" id="clientesprimary"></div>
 
   <div class="body-container-header">
     <?php if ($lang === "en") {

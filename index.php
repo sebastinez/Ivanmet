@@ -54,8 +54,14 @@ if (isset($_GET["lang"])) {
         <div><img id="flecha" src='./src/Flecha.png' alt=''></div>
       </div>
       <div id="flexBoton">
-        <a href="?lang=es" class="boton"><img src='img/flags/es.svg' height='40px'><p class="mobile">ESP</p><p class="desktop">Español</p></a>
-        <a href="?lang=en" class="boton"><img src='img/flags/gb.svg' height='40px'><p class="mobile">ENG</p><p class="desktop">English</p></a>
+        <a href="?lang=es" class="boton"><img src='img/flags/es.svg' height='40px'>
+          <p class="mobile">ESP</p>
+          <p class="desktop">Español</p>
+        </a>
+        <a href="?lang=en" class="boton"><img src='img/flags/gb.svg' height='40px'>
+          <p class="mobile">ENG</p>
+          <p class="desktop">English</p>
+        </a>
         <div id="skip" onClick="entrar()">Saltar introduccion</div>
       </div>
     </div>
@@ -102,8 +108,8 @@ if (isset($_GET["lang"])) {
           $fecha = preg_match_all("(\d*\/\d*\/\d*)", $cadena, $fechaArr);
           $compra = preg_match_all("(\d*,\d*)", $cadena, $compraArr);
           if ($lang === "en") {
-            $fechaUS = explode("/",$fechaArr[0][1]);
-            $fechaUSNew = $fechaUS[1]."/".$fechaUS[0]."/".$fechaUS[2];
+            $fechaUS = explode("/", $fechaArr[0][1]);
+            $fechaUSNew = $fechaUS[1] . "/" . $fechaUS[0] . "/" . $fechaUS[2];
             print("Customs Payment US Dollar " . $fechaUSNew . "<span id='brCambio'><br></span> Buy: " . $compraArr[0][2] . " Sell: " . $compraArr[0][3]);
           } else {
             print("Pago Aduana dólar " . $fechaArr[0][1] . "<span id='brCambio'><br></span> Compra: " . $compraArr[0][2] . " Venta: " . $compraArr[0][3]);

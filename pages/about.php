@@ -15,7 +15,7 @@
       echo $about_es;
     } ?>
   </div>
-  <div class="secctionfotos" id="aboutprimary"></div>
+  <div class="secctionfotos section-container-fotos" id="aboutprimary"></div>
 
 </div>
 <div class="body-servicios">

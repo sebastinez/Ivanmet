@@ -13,13 +13,13 @@ if (isset($_GET["lang"])) {
 }
 ?>
 
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel='stylesheet' href='./css/logo.css'>
   <link rel="stylesheet" href="./css/style.css">
@@ -82,7 +82,6 @@ if (isset($_GET["lang"])) {
       </div>
       <div><a href="?p=about"><img src='./src/LOGO FINAL CURVAS.png' alt='Logo IVANMET' id="logo"></a></div>
       <div id="bannerDiv"><img id="banner" src='./img/banner.png' alt=''></div>
-
       <div><a href="http://www.wnaweb.com/" target="_blank"><img src="./src/WNA.png" id="WNALogo" alt=""></a></div>
       <div><img src="./src/DUNS.png" id="DUNSLogo" alt=""></div>
     </div>
@@ -139,7 +138,6 @@ if (isset($_GET["lang"])) {
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
   <script type="text/javascript" src="./slick/slick.min.js"></script>
   <script src="./script.js"></script>
-
 </body>
 
 </html>

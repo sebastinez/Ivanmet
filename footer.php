@@ -36,5 +36,7 @@
         <div><a href="mailto:administracion@ivanmetchile.com" style="color:white; text-decoration:underline;">administracion@ivanmetchile.com</a></div>
 
     </div>
-    <div class="footer-contact"><a href="https://profiles.dunsregistered.com/DunsRegisteredProfileAnywhere.aspx?key1=3139766&PaArea=mail" target="_blank"><img src="./img/dunsSello.jpg" alt="" id="DUNSQR"></a></div>
+    <div class="footer-contact">
+        <!-- <a href="https://profiles.dunsregistered.com/DunsRegisteredProfileAnywhere.aspx?key1=3139766&PaArea=mail" target="_blank"><img src="./img/dunsSello.jpg" alt="" id="DUNSQR"></a> -->
+    </div>
 </div>

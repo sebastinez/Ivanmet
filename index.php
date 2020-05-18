@@ -99,19 +99,19 @@ if (isset($_GET["lang"])) {
         <?php
         try {
           $client = new Client();
-          $crawler = $client->request('GET', 'http://www.cda.org.ar/tipo_cambio.php');
-          $pos = $crawler->filter('.MsoSubtitle')->each(function ($node) {
+          $crawler = $client->request('GET', 'https://www.bna.com.ar/Personas');
+          $date = $crawler->filter('#divisas .fechaCot')->each(function ($node) {
             return $node->text();
           });
-          $cadena = join(" ", $pos);
-          $fecha = preg_match_all("(\d*\/\d*\/\d*)", $cadena, $fechaArr);
-          $compra = preg_match_all("(\d*,\d*)", $cadena, $compraArr);
+          $divisas = $crawler->filter('#divisas .cotizacion td')->each(function ($node) {
+            return $node->text();
+          });
           if ($lang === "en") {
-            $fechaUS = explode("/", $fechaArr[0][1]);
+            $fechaUS = explode("/", $date[0]);
             $fechaUSNew = $fechaUS[1] . "/" . $fechaUS[0] . "/" . $fechaUS[2];
-            print("Customs Payment US Dollar " . $fechaUSNew . "<span id='brCambio'><br></span> Buy: " . $compraArr[0][2] . " Sell: " . $compraArr[0][3]);
+            print("Customs Payment US Dollar " . $fechaUSNew . "<span id='brCambio'><br></span> Buy: " . $divisas[1] . " Sell: " . $divisas[2]);
           } else {
-            print("Pago Aduana dólar " . $fechaArr[0][1] . "<span id='brCambio'><br></span> Compra: " . $compraArr[0][2] . " Venta: " . $compraArr[0][3]);
+            print("Pago Aduana dólar " . $date[0] . "<span id='brCambio'><br></span> Compra: " . $divisas[1] . " Venta: " . $divisas[2]);
           }
         } catch (Exception $e) {
           if ($lang === 'en') {

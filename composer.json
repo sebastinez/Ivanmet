@@ -1,0 +1,7 @@
+{
+    "require": {
+        "fabpot/goutte": "3.2.1",
+        "phpmailer/phpmailer": "~6.0",
+        "symfony/http-client": "^4.4"
+    }
+}

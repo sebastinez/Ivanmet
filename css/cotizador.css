@@ -1,0 +1,51 @@
+#cotizador {
+  margin: auto;
+  width: 500px;
+  padding: 20px 16px 24px 16px;
+  border-radius: 8px;
+  border: 1px solid rgb(223, 225, 229);
+}
+#cotizador-text1 {
+  color: rgb(135, 135, 135);
+  font-family: Roboto, HelveticaNeue, Arial, sans-serif;
+  font-size: 16px;
+  height: 19px;
+}
+
+#cotizador-text2 {
+  color: rgb(33, 33, 33);
+  font-family: arial, sans-serif;
+  font-size: calc(1.5em + 1vw);
+  height: 43px;
+  line-height: 43.2px;
+  margin: 4px 0px 0px 0px;
+}
+
+#cotizador-table {
+  margin-top: 30px;
+  table-layout: fixed;
+  -webkit-border-horizontal-spacing: 0px;
+  -webkit-border-vertical-spacing: 0px;
+}
+
+.cotizador-input {
+  color: rgb(112, 117, 122);
+  border-radius: 6px;
+  border: 1px solid rgb(223, 225, 229);
+  cursor: text;
+  font-family: Roboto, HelveticaNeue, Arial, sans-serif;
+  font-size: 16px;
+  font-stretch: 100%;
+  height: 36px;
+  overflow: hidden;
+  padding: 0px 0px 0px 12px;
+  width: 124.188px;
+}
+
+.cotizador-space {
+  width: 8px;
+}
+
+.cotizador-selector {
+  font-size: 13px;
+}

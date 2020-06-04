@@ -1,0 +1,76 @@
+#introAnimacion {
+  position: relative;
+  top: 100px;
+  height: 200px;
+  width: 650px;
+  margin: auto;
+}
+
+#titulo {
+  position: absolute;
+  top: 0px;
+  height: 110px;
+  opacity: 0;
+  animation: Titulo 1000ms ease-out forwards;
+  animation-delay: 2700ms;
+}
+
+#titulo-secundario {
+  position: absolute;
+  top: 110px;
+  left: 15px;
+  height: 45px;
+  opacity: 0;
+  animation: TituloSecundario 1000ms ease-out forwards;
+  animation-delay: 4000ms;
+}
+
+#ventana {
+  opacity: 0;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  animation: Ventana 1000ms linear forwards;
+  animation-delay: 1500ms;
+}
+#flecha {
+  position: absolute;
+  top: 6px;
+  animation: Flecha 1500ms ease-out forwards;
+}
+@keyframes Flecha {
+  0% {
+    left: -1000px;
+  }
+  100% {
+    left: 413px;
+  }
+}
+@keyframes Ventana {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes Titulo {
+  0% {
+    opacity: 0;
+    left: -150px;
+  }
+  100% {
+    opacity: 1;
+    left: 0px;
+  }
+}
+@keyframes TituloSecundario {
+  0% {
+    opacity: 0;
+    left: -135px;
+  }
+  100% {
+    opacity: 1;
+    left: 15px;
+  }
+}

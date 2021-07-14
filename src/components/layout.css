@@ -1,0 +1,758 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0px;
+  font-family: "Merriweather Sans", sans-serif;
+}
+.hide {
+  opacity: 0;
+}
+
+div#flexBoton a p {
+  margin-top: 5px;
+  text-align: center;
+}
+
+div#flexBoton a p.mobile {
+  text-align: center;
+  display: none;
+}
+
+.menu-item p {
+  display: inline-block;
+}
+
+.menu-item p.mobile {
+  display: none;
+}
+
+#flexBoton {
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  position: relative;
+  top: 40vh;
+}
+
+#cambio {
+  background-color: rgba(32, 102, 18, 0.2);
+  border-bottom: 1px solid black;
+  padding: 10px;
+  text-align: center;
+}
+
+#herramientas_div {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  display: block;
+  background-color: rgba(26, 131, 176, 0.2);
+  padding: 2px;
+  text-align: center;
+}
+
+#herramientas_mobile {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 0px;
+  margin: 0px;
+  list-style-type: none;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  cursor: default;
+}
+
+.herrItem {
+  padding: 5px 5px;
+  color: black;
+  transition: all 500ms;
+}
+
+.herrItem:hover {
+  background-color: black;
+  color: white;
+  border-radius: 3px;
+  transition: all 500ms;
+}
+
+#brCambio {
+  display: none;
+}
+
+.about-icons {
+  width: 100%;
+  max-width: 150px;
+  color: #5aa3df;
+}
+
+.customer-logos {
+  margin-top: 50px;
+  overflow: hidden;
+}
+.divSlide {
+  position: relative;
+  animation: slide 40s linear alternate infinite;
+  display: flex;
+  flex-direction: row;
+}
+
+.imgSlide {
+  width: 150px;
+  padding-left: 30px;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(-900px);
+  }
+  100% {
+    transform: translateX(1000px);
+  }
+}
+
+#skip {
+  cursor: pointer;
+  display: none;
+  color: gray;
+  margin-top: 20px;
+}
+
+#skip:hover {
+  text-decoration: underline;
+  transition: text-decoration 0.5s linear;
+}
+
+.boton {
+  margin: 0px 50px;
+  cursor: pointer;
+  display: none;
+  transition: box-shadow 200ms linear;
+}
+
+#page {
+  display: none;
+}
+
+.mapaWNA {
+  transition: transform 200ms linear;
+}
+.mapaWNA:hover {
+  transform: translateY(-5px);
+  transition: transform 50ms ease-in-out;
+}
+
+.header {
+  background-color: rgba(0, 128, 0, 0.05);
+  position: relative;
+  height: 156px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#textoAniversario {
+  margin-top: 1px;
+  position: absolute;
+  width: 350px;
+  font-size: 12px;
+  text-align: center;
+  animation: Aniversario 25000ms linear infinite;
+}
+
+#banner {
+  max-height: 100%;
+}
+
+#bannerDiv {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  height: 134px;
+  z-index: 0;
+}
+
+#bannerDiv::after {
+  display: block;
+  position: relative;
+  background-image: linear-gradient(
+    -45deg,
+    rgba(255, 255, 255, 1) 0,
+    rgba(255, 255, 255, 0.9) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  margin-top: -150px;
+  height: 150px;
+  width: 100%;
+  content: "";
+}
+
+@keyframes Aniversario {
+  0% {
+    transform: translateX(-350px);
+  }
+  100% {
+    transform: translateX(calc(100vw + 300px));
+  }
+}
+
+.logoWrapper {
+  top: 30px;
+  left: 25px;
+}
+
+.contactLogo {
+  background-color: white;
+  opacity: 1;
+  margin-bottom: 10px;
+  height: 65px;
+}
+
+.menu {
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+  background: linear-gradient(to bottom, rgba(57, 185, 216, 1) 0%, rgba(26, 131, 176, 1) 100%);
+  height: 34px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  border: 1px solid black;
+}
+#navArrows {
+  position: absolute;
+  top: 500px;
+  margin: auto;
+}
+
+.imgPrev {
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  top: 50%;
+  height: 5vh;
+  left: 0px;
+  z-index: 10;
+  cursor: pointer;
+}
+.imgNext {
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  top: 50%;
+  height: 5vh;
+  right: 0px;
+  z-index: 10;
+  cursor: pointer;
+}
+
+#menu-Proyectos {
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+  background: linear-gradient(to bottom, rgba(57, 185, 216, 0.5) 0%, rgba(26, 131, 176, 0.5) 100%);
+  height: 34px;
+  display: flex;
+  padding-left: 13vw;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+}
+#menu-Servicios {
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+  background: linear-gradient(to bottom, rgba(57, 185, 216, 0.5) 0%, rgba(26, 131, 176, 0.5) 100%);
+  height: 34px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  border: 1px solid black;
+}
+
+.menu-item {
+  cursor: pointer;
+  font-size: 14px;
+  color: white;
+  text-decoration: none;
+}
+.menu-item-servicios {
+  font-size: 14px;
+  color: black;
+  text-decoration: none;
+}
+.menu-item-proyectos {
+  font-size: 14px;
+  color: black;
+  margin-left: 5vw;
+  text-decoration: none;
+}
+
+.menu-item-proyectos:hover {
+  color: white;
+  border-bottom: 0.1rem solid white;
+  transition: all 0.2s linear;
+  text-decoration: none;
+}
+
+.WNALogo {
+  position: absolute;
+  top: 40px;
+  right: 160px;
+  height: 80px;
+  z-index: 2;
+  transition: all linear 0.2s;
+}
+.WNALogo:hover {
+  transform: scale(1.05);
+  transition: all linear 0.2s;
+}
+.DUNSLogo {
+  position: absolute;
+  top: 55px;
+  right: 80px;
+  height: 50px;
+  z-index: 2;
+}
+
+#DUNSQR {
+  border: 3px solid black;
+  width: 80px;
+  transition: all 0.5s linear;
+}
+
+#DUNSQR:hover {
+  transform: scale(1.05);
+  transition: all 0.2s ease-in-out;
+}
+
+.menu-item:hover {
+  color: white;
+  border-bottom: 0.1rem solid white;
+  transition: all 0.2s linear;
+  text-decoration: none;
+}
+
+.menu-item-servicios:hover {
+  color: white;
+  border-bottom: 0.1rem solid white;
+  transition: all 0.2s linear;
+  text-decoration: none;
+}
+.body {
+  position: relative;
+}
+
+.body-container {
+  position: relative;
+  margin: 40px;
+  background-color: white;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+  border: 2px solid black;
+  border-radius: 8px;
+}
+
+.body-container-servicios {
+  color: black;
+  height: 100%;
+  text-align: center;
+  margin: 0 10px;
+  flex: 1 1 0;
+  align-content: center;
+  background-color: white;
+  opacity: 1;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+  border: 2px solid #ff9700;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.description {
+  padding-top: 10px;
+}
+.body-container-servicios:hover > .description {
+  text-decoration: underline;
+  transition: all 500ms;
+}
+
+.body-servicios {
+  display: flex;
+  margin: 0 30px;
+  padding-bottom: 30px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/*////////////////////////////////////////////////////////////*/
+/*Fotos para secciones "fumadas" de paginas*/
+
+.secctionfotos {
+  position: absolute;
+
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.25;
+  z-index: 1;
+}
+
+.section-container-fotos{
+  top: 0;
+}
+
+#entryBg {
+  background-image: url("../images/proyecto_bg.jpg");
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.1;
+  z-index: -1;
+}
+.zindex {
+  z-index: -1;
+}
+
+#contactbg {
+  background-image: url("../images/contact_bg.jpg");
+}
+#clientesbg {
+  background-image: url("../images/clientes_bg.jpg");
+}
+#aboutbg {
+  background-image: url("../images/about_bg.jpg");
+}
+#proyectobg {
+  background-color: rgb(217, 233, 248);
+}
+#agentedecargabg {
+  background-image: url("../images/agentedecarga_bg.jpg");
+}
+#serviciosaduanerosbg {
+  background-image: url("../images/serviciosaduaneros_bg.jpg");
+}
+#cargaproyectobg {
+  background-image: url("../images/cargaproyecto_bg.jpg");
+}
+#oficinaexternabg {
+  background-image: url("../images/oficinaexterna_bg.jpg");
+}
+#segurosbg {
+  background-image: url("../images/seguros_bg.jpg");
+}
+
+#aboutprimary {
+  background-image: url("../images/about_primera.jpg");
+}
+
+#segurosprimary {
+  background-image: url("../images/seguros_primera.jpg");
+}
+#oficinaexternaprimary {
+  background-image: url("../images/oficinaexterna_primera.jpg");
+}
+#serviciosaduanerosprimary {
+  background-image: url("../images/serviciosaduaneros_primera.jpg");
+}
+#cargaproyectoprimary {
+  background-image: url("../images/cargaproyecto_primera.jpg");
+}
+#agentedecargaprimary {
+  background-image: url("../images/agentedecarga_primera.jpg");
+}
+#clientesprimary {
+  background-image: url("../images/clientes_primera.jpg");
+}
+#proyectoprimary {
+  background-color: rgb(238, 240, 240);
+}
+#contactprimary {
+  background-image: url("../images/contact_primera.jpg");
+}
+
+.body-container-text {
+  position: relative;
+  z-index: 10;
+  margin-left: 65px;
+  margin-top: 40px;
+  margin-right: 70px;
+  margin-bottom: 40px;
+  font-size: 14px;
+}
+
+.body-container-header {
+  position: relative;
+  z-index: 10;
+  line-height: 150%;
+  margin-left: 65px;
+  color: #ff9700;
+  font-size: calc(1.5em + 1vw);
+  margin-top: 45px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 14px;
+  text-align: center;
+  padding: 30px;
+  border: 1px solid black;
+  background: linear-gradient(to bottom, rgba(57, 185, 216, 1) 0%, rgba(26, 131, 176, 1) 100%);
+}
+.footer-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: left;
+}
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-contact {
+  color: white;
+  margin-left: 30px;
+}
+
+#landingLogo {
+  z-index: 3;
+}
+
+#bgAniversario {
+  box-shadow: 0px -1px 10px rgba(0, 0, 0, 0.25);
+  border-top: 2px solid black;
+  background-color: white;
+  position: absolute;
+  top: 134px;
+  width: 100%;
+  height: 20px;
+  z-index: 5;
+}
+svg {
+  width: 100vw;
+  height: (height/width * 100) vw;
+  max-height: 100vh;
+  max-width: (width/height * 100) vh;
+}
+
+.float_right_tabs {
+  position: fixed;
+  top: 200px;
+  z-index: 150;
+  right: 0;
+  width: 127px;
+}
+
+.float_right_tabs .tab_title {
+  padding: 15px 0px 18px 7px;
+  color: #fff;
+  background: rgba(32, 102, 18, 0.7);
+  /* border-radius: 15px 0 0 0px; */
+  cursor: pointer;
+  transition: all 500ms;
+}
+
+.float_right_tabs .tab_title:hover {
+  background: black;
+  color: white;
+  transition: all 500ms;
+}
+
+.imageSlider {
+  max-height: 90vh;
+  max-width: 100%;
+  margin: auto;
+}
+
+@media only screen and (max-width: 700px) {
+  .imageSlider {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+  }
+
+  div#flexBoton a p.mobile {
+    display: block;
+  }
+
+  div#flexBoton a p.desktop {
+    display: none;
+  }
+
+  .menu-item p.mobile {
+    display: inline-block;
+    margin: 0;
+  }
+
+  .menu-item p.desktop {
+    display: none;
+  }
+
+  #herramientas_mobile {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #brCambio {
+    display: block;
+    height: 0px;
+  }
+
+  @keyframes slide {
+    0% {
+      transform: translateX(-1100px);
+    }
+    100% {
+      transform: translateX(500px);
+    }
+  }
+  .divSlide {
+    animation: slide 30s linear alternate infinite;
+  }
+
+  .body-container-header {
+    margin-left: 20px;
+  }
+  .body-container-text {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .logo {
+    left: calc(50% - 123px);
+  }
+  .header {
+    height: 170px;
+  }
+  #bgAniversario {
+    top: 148px;
+  }
+  .float_right_tabs {
+    display: none;
+  }
+  #cambio #herramientas_mobile {
+    display: block;
+  }
+  #menu-Proyectos {
+    justify-content: space-around;
+  }
+  #titulo {
+    display: none;
+  }
+  #titulo-secundario {
+    display: none;
+  }
+  .WNALogo {
+    position: absolute;
+    transform: scale(0.6);
+    right: 50px;
+    top: 85px;
+  }
+
+  .DUNSLogo {
+    transform: scale(0.6);
+    position: absolute;
+    top: 100px;
+    right: 20px;
+  }
+  #ventana {
+    left: 215px;
+  }
+  #flecha {
+    position: absolute;
+    top: 6px;
+    opacity: 0;
+    left: 150px;
+    animation: Flecha 1500ms ease-out forwards;
+    animation-delay: 1500ms;
+  }
+  @keyframes Flecha {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  #menu-Servicios {
+    flex-direction: column;
+    height: 200px;
+  }
+  #menu-Proyectos {
+    flex-direction: column;
+    height: 70px;
+    padding-left: 0px;
+    align-content: center;
+  }
+  .body-servicios {
+    flex-direction: column;
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin-left: 0px;
+  }
+  .menu {
+    flex-direction: column;
+    height: 200px;
+  }
+  #bannerDiv {
+    display: none;
+  }
+  .footer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-items {
+    margin-bottom: 30px;
+  }
+  .footer-contact {
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  .logoWrapper {
+    transform: scale(1.5);
+    left: 15vw;
+  }
+}
+
+@media only screen and (min-width: 700px) and (max-width: 900px) {
+  .bannerDiv {
+    left: 240px;
+  }
+  .WNALogo {
+    left: 615px;
+  }
+  .DUNSLogo {
+    left: 795px;
+  }
+}
+
+.newsBox {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid rgba(0, 128, 0, 0.5);
+  transition: all 0.1s linear;
+}
+
+.newsBox:hover {
+  box-shadow: 2px 2px 4px black;
+  transition: all 0.2s linear;
+}

@@ -2,11 +2,6 @@
   box-sizing: border-box;
 }
 
-html {
-  max-width: 100%;
-  overflow-x: hidden;
-}
-
 body {
   margin: 0px;
   font-family: "Merriweather Sans", sans-serif;

@@ -282,6 +282,15 @@ div#flexBoton a p.mobile {
   color: white;
   text-decoration: none;
 }
+
+button.menu-item {
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+}
+
 .menu-item-servicios {
   font-size: 14px;
   color: black;
@@ -302,7 +311,6 @@ div#flexBoton a p.mobile {
 }
 
 .WNALogo {
-  position: absolute;
   top: 40px;
   right: 160px;
   height: 80px;
@@ -363,6 +371,10 @@ div#flexBoton a p.mobile {
   height: 100%;
   text-align: center;
   margin: 0 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
   flex: 1 1 0;
   align-content: center;
   background-color: white;
@@ -394,7 +406,7 @@ div#flexBoton a p.mobile {
 
 .secctionfotos {
   position: absolute;
-
+  top: 190px;
   left: 0;
   height: 100%;
   width: 100%;
@@ -410,7 +422,7 @@ div#flexBoton a p.mobile {
 }
 
 #entryBg {
-  background-image: url("../images/proyecto_bg.jpg");
+  background-image: url("../images/background/proyecto_bg.jpg");
   position: relative;
   left: 0;
   top: 0;
@@ -427,60 +439,60 @@ div#flexBoton a p.mobile {
 }
 
 #contactbg {
-  background-image: url("../images/contact_bg.jpg");
+  background-image: url("../images/background/contact_bg.jpg");
 }
 #clientesbg {
-  background-image: url("../images/clientes_bg.jpg");
+  background-image: url("../images/background/clientes_bg.jpg");
 }
 #aboutbg {
-  background-image: url("../images/about_bg.jpg");
+  background-image: url("../images/background/about_bg.jpg");
 }
 #proyectobg {
   background-color: rgb(217, 233, 248);
 }
 #agentedecargabg {
-  background-image: url("../images/agentedecarga_bg.jpg");
+  background-image: url("../images/background/agentedecarga_bg.jpg");
 }
 #serviciosaduanerosbg {
-  background-image: url("../images/serviciosaduaneros_bg.jpg");
+  background-image: url("../images/background/serviciosaduaneros_bg.jpg");
 }
 #cargaproyectobg {
-  background-image: url("../images/cargaproyecto_bg.jpg");
+  background-image: url("../images/background/cargaproyecto_bg.jpg");
 }
 #oficinaexternabg {
-  background-image: url("../images/oficinaexterna_bg.jpg");
+  background-image: url("../images/background/oficinaexterna_bg.jpg");
 }
 #segurosbg {
-  background-image: url("../images/seguros_bg.jpg");
+  background-image: url("../images/background/seguros_bg.jpg");
 }
 
 #aboutprimary {
-  background-image: url("../images/about_primera.jpg");
+  background-image: url("../images/background/about_primera.jpg");
 }
 
 #segurosprimary {
-  background-image: url("../images/seguros_primera.jpg");
+  background-image: url("../images/background/seguros_primera.jpg");
 }
 #oficinaexternaprimary {
-  background-image: url("../images/oficinaexterna_primera.jpg");
+  background-image: url("../images/background/oficinaexterna_primera.jpg");
 }
 #serviciosaduanerosprimary {
-  background-image: url("../images/serviciosaduaneros_primera.jpg");
+  background-image: url("../images/background/serviciosaduaneros_primera.jpg");
 }
 #cargaproyectoprimary {
-  background-image: url("../images/cargaproyecto_primera.jpg");
+  background-image: url("../images/background/cargaproyecto_primera.jpg");
 }
 #agentedecargaprimary {
-  background-image: url("../images/agentedecarga_primera.jpg");
+  background-image: url("../images/background/agentedecarga_primera.jpg");
 }
 #clientesprimary {
-  background-image: url("../images/clientes_primera.jpg");
+  background-image: url("../images/background/clientes_primera.jpg");
 }
 #proyectoprimary {
   background-color: rgb(238, 240, 240);
 }
 #contactprimary {
-  background-image: url("../images/contact_primera.jpg");
+  background-image: url("../images/background/contact_primera.jpg");
 }
 
 .body-container-text {

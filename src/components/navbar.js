@@ -14,9 +14,9 @@ export const Navbar = () => {
           </Link>
         </div>
         <div>
-          <a className="menu-item" onClick={() => setSecondary("services")}>
+          <button className="menu-item" onClick={() => setSecondary("services")}>
             Servicios
-          </a>
+          </button>
         </div>
         <div>
           <Link className="menu-item" to="/clients">
@@ -24,9 +24,9 @@ export const Navbar = () => {
           </Link>
         </div>
         <div>
-          <a className="menu-item" onClick={() => setSecondary("projects")}>
+          <button className="menu-item" onClick={() => setSecondary("projects")}>
             Proyectos Realizados
-          </a>
+          </button>
         </div>
         <div>
           <Link className="menu-item" to="/contact">

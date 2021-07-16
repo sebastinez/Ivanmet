@@ -1,16 +1,13 @@
 import * as React from "react"
-import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
-
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
 const ContactPage = () => (
   <Layout>
     <Seo title="IVANMET" />
-    <div className="secctionfotos zindex" id="contactbg" />
+    <div className="secctionfotos zindex" />
     <div className="body-container">
-      <div className="secctionfotos" id="contactprimary" />
+      <div className="secctionfotos" />
       <div className="body-container-header">Contacto</div>
       <div className="body-container-text">
         <p>
@@ -19,24 +16,24 @@ const ContactPage = () => (
         </p>
         <form className="ui form" action="/" method="POST">
           <div className="field">
-            <label>Nombre</label>
-            <input name="nombre" type="text" required />
+            <label htmlFor="name">Nombre</label>
+            <input name="nombre" id="name" type="text" required />
           </div>
           <div className="field">
-            <label>Empresa</label>
-            <input name="empresa" type="text" />
+            <label htmlFor="company">Empresa</label>
+            <input name="empresa" id="company" type="text" />
           </div>
           <div className="field">
-            <label>Correo electrónico</label>
-            <input name="mail" type="email" required />
+            <label htmlFor="mail">Correo electrónico</label>
+            <input name="mail" id="mail" type="email" required />
           </div>
           <div className="field">
-            <label>Teléfono</label>
-            <input name="telefono" type="text" required />
+            <label htmlFor="phone">Teléfono</label>
+            <input name="telefono" id="phone" type="text" required />
           </div>
           <div className="field">
-            <label>Mensaje</label>
-            <textarea name="body" required />
+            <label htmlFor="message">Mensaje</label>
+            <textarea name="body" id="message" required />
           </div>
           <div className="field">
             <button className="ui button primary" type="submit">

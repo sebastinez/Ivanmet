@@ -30,11 +30,15 @@ const Layout = ({ children }) => {
         <div id="bannerDiv">
           <StaticImage src="../images/banner.png" alt="" height={134} />
         </div>
+        <div/>
+        <div/>
+        <div/>
+        <div/>
         <div>
-          <a href="http://www.wnaweb.com/" target="_blank">
+          <a href="http://www.wnaweb.com/" target="_blank" rel="noreferrer">
             <StaticImage
               src="../images/WNA.png"
-              alt=""
+              alt="WNA Logo"
               layout="fixed"
               height={80}
               className="WNALogo"

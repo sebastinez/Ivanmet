@@ -1,16 +1,13 @@
 import * as React from "react"
-import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
-
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
 const InsuranceServicesPage = () => (
   <Layout>
     <Seo title="IVANMET" />
-    <div className="secctionfotos zindex" id="segurosbg" />
+    <div className="secctionfotos zindex" />
     <div className="body-container">
-      <div className="secctionfotos" id="segurosprimary" />
+      <div className="secctionfotos" />
       <div className="body-container-header" id="text">
         Seguros de Transporte
       </div>

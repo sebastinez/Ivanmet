@@ -1,7 +1,5 @@
 import * as React from "react"
-import { Link, graphql } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
-
+import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
@@ -18,28 +16,32 @@ const ClientsPage = ({ data }) => {
   return (
     <Layout>
       <Seo title="IVANMET" />
-      <div className="secctionfotos zindex" id="clientesbg"></div>
+      <div className="secctionfotos zindex"></div>
 
       <div className="body-container">
         <div
           className="secctionfotos section-container-fotos"
-          id="clientesprimary"
         ></div>
 
-        <div className="body-container-header">
-          Clientes</div>
+        <div className="body-container-header">Clientes</div>
         <div className="body-container-text">
-          A continuación detallamos los principales clientes a los que tenemos el gusto de proveer con nuestros servicios.<br />
+          A continuación detallamos los principales clientes a los que tenemos
+          el gusto de proveer con nuestros servicios.
+          <br />
           Si aún no es cliente nuestro, esperamos pronto contar con Ud.
           <div className="customer-logos">
-            {chunk(data.clients.edges, 7).map((slide) => {
-              return (<div className="divSlide">
-                {slide.map(({ node }) => (
-                  <div>
-                    <img className="imgSlide" src={node.childImageSharp.fluid.srcWebp} />
-                  </div>
-                ))}
-              </div>
+            {chunk(data.clients.edges, 7).map(slide => {
+              return (
+                <div className="divSlide">
+                  {slide.map(({ node }) => (
+                    <div>
+                      <img alt="Client Logo"
+                        className="imgSlide"
+                        src={node.childImageSharp.fluid.srcWebp}
+                      />
+                    </div>
+                  ))}
+                </div>
               )
             })}
           </div>
@@ -50,8 +52,6 @@ const ClientsPage = ({ data }) => {
 }
 
 export default ClientsPage
-
-
 
 export const pageQuery = graphql`
   {

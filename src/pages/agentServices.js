@@ -1,16 +1,14 @@
 import * as React from "react"
-import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
-
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
 const AgentServicesPage = () => (
   <Layout>
     <Seo title="IVANMET" />
-    <div className="secctionfotos zindex" id="agentedecargabg" />
+    <div className="secctionfotos zindex" />
     <div className="body-container">
-      <div className="secctionfotos" id="agentedecargaprimary" />
+      <div className="secctionfotos" />
       <div className="body-container-header" id="text">
         Agentes de carga
       </div>
@@ -24,15 +22,15 @@ const AgentServicesPage = () => (
           transporte. Disponibilidad, regularidad y frecuencia.
         </p>
         <ul>
-          <li> Retiro, recepción e inspección.</li>
-          <li> Embalajes</li>
-          <li> Cargas aéreas - consolidadas y completas.</li>
+          <li>Retiro, recepción e inspección.</li>
+          <li>Embalajes</li>
+          <li>Cargas aéreas - consolidadas y completas.</li>
           <li>Marítimas - LCL y FCL - Contenedores Especiales - Chartering.</li>
           <li>
             Terrestres - Consolidados y Completos - Servicio de flete a toda la
             Argentina.
           </li>
-          <li> Gestión de cargas peligrosas.</li>
+          <li>Gestión de cargas peligrosas.</li>
         </ul>
         <a
           href="http://www.wnaweb.com/p-locations"

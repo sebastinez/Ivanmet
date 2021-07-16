@@ -8,7 +8,7 @@ import Seo from "../components/seo"
 const AboutPage = () => (
   <Layout>
     <Seo title="IVANMET" />
-    <div className="secctionfotos zindex" id="aboutbg" />
+    <div className="secctionfotos zindex" />
     <div className="body-container">
       <div className="body-container-header">Quienes somos</div>
       <div className="body-container-text" id="body">
@@ -30,22 +30,20 @@ const AboutPage = () => (
       </div>
       <div
         className="secctionfotos section-container-fotos"
-        id="aboutprimary"
       />
     </div>
     <div className="body-servicios">
-      <Link to="/servicios-agente">
+      <Link to="/agentServices">
         <div className="body-container-servicios">
           <StaticImage
             src="../images/truck-loading.svg"
             className="about-icons"
             layout="fullWidth"
-            height={150}
           />
           <div className="description">Agentes de Carga</div>
         </div>
       </Link>
-      <Link to="/servicios-aduaneros">
+      <Link to="/customServices">
         <div className="body-container-servicios">
           <StaticImage
             src="../images/user-tie.svg"
@@ -55,7 +53,7 @@ const AboutPage = () => (
           <div className="description">Servicios Aduaneros</div>
         </div>
       </Link>
-      <Link to="/servicios-carga">
+      <Link to="/loadServices">
         <div className="body-container-servicios">
           <StaticImage
             src="../images/industry.svg"
@@ -65,7 +63,7 @@ const AboutPage = () => (
           <div className="description">Carga de Proyecto</div>
         </div>
       </Link>
-      <Link to="/servicios-oficina">
+      <Link to="/officeServices">
         <div className="body-container-servicios">
           <StaticImage
             src="../images/home.svg"
@@ -77,7 +75,7 @@ const AboutPage = () => (
           </div>
         </div>
       </Link>
-      <Link to="/servicios-seguros">
+      <Link to="/insuranceServices">
         <div className="body-container-servicios">
           <StaticImage
             src="../images/handshake.svg"
